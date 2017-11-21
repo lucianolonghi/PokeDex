@@ -1,62 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_peso_editar"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingTop="250dp"
-    tools:context="com.androiddesdecero.reciclerview.PesoEditar">
+    android:layout_marginBottom="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="16dp"
+    android:orientation="vertical"
+    android:paddingTop="250dp">
+
+    <ImageView
+        android:id="@+id/fotoView"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="500dp"
+        android:layout_marginStart="50dp"
+        android:layout_toEndOf="@+id/idEspecie"
+        android:layout_toRightOf="@+id/idEspecie"
+        app:srcCompat="@drawable/bulbasaur" />
 
     <TextView
-        android:id="@+id/peso"
-        android:textStyle="bold"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="30dp"
-        android:paddingRight="100dp"
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:text="#001"
+        android:textColor="@color/colorPrimaryDark" />
+
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:gravity="center"
+        android:paddingLeft="60dp"
+        android:paddingRight="10dp"
+        android:text="Bulbasaur"
+        android:textColor="@color/colorEspecie"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tipo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Bulbasaur"/>
-
-    <TextView
-        android:id="@+id/fecha"
-        android:gravity="center"
+        android:gravity="left"
+        android:paddingBottom="30dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="1dp"
         android:text="Agua"
-        android:paddingRight="250dp"
-        android:paddingBottom="20dp"
-        android:textColor="@color/colorPrimaryDark"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:textColor="@color/colorPrimaryDark" />
 
 
     <TextView
-        android:id="@+id/velocidad"
+        android:id="@+id/velocidadEspecie"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
         android:gravity="left"
         android:text="Velocidad: 4"
-        android:layout_weight="100dp"
-        android:textColor="@color/colorPrimaryDark"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:textColor="@color/colorDatos" />
 
     <TextView
         android:id="@+id/ataque"
-        android:gravity="center"
-        android:text="Ataque: 3"
-        android:layout_weight="100dp"
-        android:textColor="@color/colorPrimaryDark"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="Ataque: 3"
+        android:textColor="@color/colorDatos" />
 
     <TextView
         android:id="@+id/defensa"
-        android:gravity="right"
-        android:text="Defensa: 2"
-        android:paddingHorizontal="20dp"
-        android:paddingRight="250dp"
-        android:textColor="@color/colorPrimaryDark"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="43dp"
+        android:gravity="left"
+        android:paddingRight="250dp"
+        android:text="Defensa: 200"
+        android:textColor="@color/colorDatos" />
 
 
 </LinearLayout>
